@@ -6,7 +6,7 @@ replicaCount: 1
 restartPolicy: Never
 
 image:
-  repository: docker.artifactory/docker-app
+  repository: gke.jfrog.team/docker-app
   tag: latest
   secretName: regsecret
   pullPolicy: Always
@@ -21,7 +21,7 @@ service:
   annotations: {}
   clusterIP: ""
   externalIPs: []
-  loadBalancerIP: ""
+  loadBalancerIP: "10.0.10.12"
   loadBalancerSourceRanges: []
   type: LoadBalancer
   port: 8181
