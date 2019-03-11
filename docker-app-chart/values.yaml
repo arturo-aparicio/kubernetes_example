@@ -6,7 +6,7 @@ replicaCount: 1
 restartPolicy: Never
 
 image:
-  repository: docker.artifactory/docker-app
+  repository: mill.jfrog.team:9000/docker-app
   tag: latest
   secretName: regsecret
   pullPolicy: Always
